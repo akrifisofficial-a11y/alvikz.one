@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-card, .anime-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6a11cb;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.bio, .anime-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin: 30px 0;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-link i {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Цвета для соцсетей */
+.vk { background: linear-gradient(to right, #4c75a3, #5a7fa9); }
+.telegram { background: linear-gradient(to right, #2aabee, #229ed9); }
+.discord { background: linear-gradient(to right, #5865F2, #7289DA); }
+.shikimori { background: linear-gradient(to right, #ff6b6b, #ee5a52); }
+.youtube { background: linear-gradient(to right, #ff0000, #cc0000); }
+.github { background: linear-gradient(to right, #333, #555); }
+.anime { background: linear-gradient(to right, #9b59b6, #8e44ad); }
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Стили для страницы аниме */
+.back-button {
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #2575fc;
+    transform: translateX(-5px);
+}
+
+.btn-back i {
+    margin-right: 8px;
+}
+
+.anime-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.anime-header h1 i {
+    color: #6a11cb;
+    margin-right: 10px;
+}
+
+.shikimori-info {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 5px solid #6a11cb;
+}
+
+.platform-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+.platform-logo i {
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.platform-logo h2 {
+    margin: 0;
+    color: #6a11cb;
+}
+
+.anime-list-link {
+    margin: 25px 0;
+}
+
+.shikimori-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 18px 30px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(106, 17, 203, 0.3);
+}
+
+.shikimori-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(106, 17, 203, 0.4);
+}
+
+.shikimori-link i {
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.note {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #856404;
+}
+
+.note code {
+    background: #ffeaa7;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.instructions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.instructions h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.instructions a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.instructions a:hover {
+    text-decoration: underline;
+}
+
+.stats {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.stats h3 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6a11cb;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .profile-card, .anime-card {
+        padding: 25px;
+    }
+    
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .social-link {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
