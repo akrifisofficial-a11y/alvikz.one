@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой список аниме</title>
+    <title>Онлайн просмотр аниме</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -17,70 +17,128 @@
             </div>
             
             <div class="anime-header">
-                <h1><i class="fas fa-tv"></i> Мой список аниме</h1>
-                <p class="anime-description">Здесь находится мой список просмотренных аниме с платформы Shikimori</p>
+                <h1><i class="fas fa-play-circle"></i> Онлайн просмотр аниме</h1>
+                <p class="anime-description">Здесь вы можете найти ссылки на онлайн просмотр популярных аниме и наш список на Shikimori</p>
+            </div>
+            
+            <!-- Секция с ответственными за клуб -->
+            <div class="club-managers">
+                <h2><i class="fas fa-crown"></i> Ответственные за клуб</h2>
+                <div class="managers-grid">
+                    <div class="manager-card">
+                        <div class="manager-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Александр Иванов</h3>
+                        <p class="manager-role">Основатель клуба</p>
+                        <p class="manager-desc">Организатор мероприятий, ведущий просмотров</p>
+                    </div>
+                    
+                    <div class="manager-card">
+                        <div class="manager-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Мария Петрова</h3>
+                        <p class="manager-role">Администратор</p>
+                        <p class="manager-desc">Контент-менеджер, ведение соцсетей</p>
+                    </div>
+                    
+                    <div class="manager-card">
+                        <div class="manager-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Дмитрий Смирнов</h3>
+                        <p class="manager-role">Технический специалист</p>
+                        <p class="manager-desc">Техподдержка, организация стримов</p>
+                    </div>
+                </div>
             </div>
             
             <div class="shikimori-info">
                 <div class="platform-logo">
                     <i class="fas fa-external-link-alt"></i>
-                    <h2>Shikimori</h2>
+                    <h2>Наш список на Shikimori</h2>
                 </div>
                 
                 <div class="anime-list-link">
-                    <p>Нажмите на кнопку ниже, чтобы перейти к моему списку аниме на Shikimori:</p>
+                    <p>Следите за нашим списком аниме и рекомендациями на Shikimori:</p>
                     
-                    <a href="https://shikimori.me/users/[ВАШ_НИК]" 
+                    <a href="https://shikimori.me/animeclub" 
                        class="shikimori-link" 
-                       target="_blank"
-                       id="shikimoriRedirect">
+                       target="_blank">
                         <i class="fas fa-external-link-alt"></i>
-                        <span>Перейти к моему списку аниме</span>
+                        <span>Перейти к нашему списку аниме</span>
                     </a>
                     
-                    <p class="note">⚠️ Замените <code>[ВАШ_НИК]</code> в ссылке выше на ваш реальный никнейм с Shikimori</p>
-                </div>
-                
-                <div class="instructions">
-                    <h3>Как добавить свой список?</h3>
-                    <ol>
-                        <li>Зайдите на <a href="https://shikimori.me" target="_blank">Shikimori</a></li>
-                        <li>Создайте аккаунт или войдите в существующий</li>
-                        <li>Добавьте аниме в свой список</li>
-                        <li>Скопируйте ссылку на ваш профиль (например: https://shikimori.me/users/ваш_ник)</li>
-                        <li>Вставьте эту ссылку в коде страницы вместо текущей</li>
-                    </ol>
+                    <p class="note">На Shikimori мы ведем список просмотренных аниме, составляем рейтинги и делимся рекомендациями</p>
                 </div>
             </div>
             
-            <div class="stats">
-                <h3>Статистика (пример):</h3>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">125</span>
-                        <span class="stat-label">Просмотрено</span>
+            <!-- Секция с онлайн площадками для просмотра -->
+            <div class="streaming-platforms">
+                <h2><i class="fas fa-video"></i> Площадки для онлайн просмотра</h2>
+                
+                <div class="platforms-grid">
+                    <a href="https://animego.org" class="platform-card" target="_blank">
+                        <div class="platform-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>AnimeGo</h3>
+                        <p>Бесплатный просмотр с субтитрами</p>
+                    </a>
+                    
+                    <a href="https://animevost.org" class="platform-card" target="_blank">
+                        <div class="platform-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>AnimeVost</h3>
+                        <p>Озвучка и субтитры</p>
+                    </a>
+                    
+                    <a href="https://jut.su" class="platform-card" target="_blank">
+                        <div class="platform-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3>Jut.su</h3>
+                        <p>Официальный контент</p>
+                    </a>
+                    
+                    <a href="https://crunchyroll.com" class="platform-card" target="_blank">
+                        <div class="platform-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Crunchyroll</h3>
+                        <p>Международная платформа</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="recommendations">
+                <h2><i class="fas fa-star"></i> Рекомендуем к просмотру</h2>
+                <div class="anime-list">
+                    <div class="anime-item">
+                        <h3>Атака титанов</h3>
+                        <p>Эпическое фэнтези с глубоким сюжетом</p>
+                        <span class="anime-tag">Фэнтези</span>
+                        <span class="anime-tag">Драма</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">15</span>
-                        <span class="stat-label">Смотрю</span>
+                    
+                    <div class="anime-item">
+                        <h3>Восхождение героя щита</h3>
+                        <p>Исекай с уникальной механикой прокачки</p>
+                        <span class="anime-tag">Исекай</span>
+                        <span class="anime-tag">Приключения</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">42</span>
-                        <span class="stat-label">В планах</span>
+                    
+                    <div class="anime-item">
+                        <h3>Магическая битва</h3>
+                        <p>Современное сёнэн с отличной анимацией</p>
+                        <span class="anime-tag">Сёнэн</span>
+                        <span class="anime-tag">Экшен</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script>
-        // Опционально: можно добавить таймер перенаправления
-        // Раскомментируйте, если хотите автоматическое перенаправление через 5 секунд
-        /*
-        setTimeout(function() {
-            window.location.href = "https://shikimori.me/users/[ВАШ_НИК]";
-        }, 5000);
-        */
-    </script>
 </body>
-</html>
+                        </html>
